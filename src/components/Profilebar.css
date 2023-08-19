@@ -1,15 +1,19 @@
-.main {
-    padding: 20px;
-    font-family: 'Roboto Slab', serif;
-}
 
 .profilebar {
     color: black;
     background-color: #f5f5f5f5;
-    border-radius: 20px;
-    margin: auto;
-    /* height: 30%; */
-    max-width: 90%;
+    border-radius: 10px;
+    /* margin: auto; */
     padding: 10px;
     /* margin-top: 20px; */
+}
+
+.boxbutton{
+    color: rgb(9 9 29);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.project{
+    flex:0 0 calc(33.33% - 10px);
 }

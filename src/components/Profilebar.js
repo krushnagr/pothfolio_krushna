@@ -1,19 +1,20 @@
-import { Image, SimpleGrid, Stack, Text, VStack } from '@chakra-ui/react'
+import { Container, Image, SimpleGrid, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import './Profilebar.css'
 
 const Profilebar = () => {
     return (
-        <div className='main'>
-            <div className='profilebar'>
+        <div className='profilebar'>
+            <Container maxW={"full"} className='container'>
                 <Stack
+                    p={'4px'}
                     direction={'row'}
                     justifyContent={'space-between'}
                     alignItems={'center'}
                 >
-                    <Image
-                        src='https://avatars.githubusercontent.com/u/123489852?s=400&u=bc2081e52dc13cc5b141dd882de091669e9da4a2&v=4' 
-                        width='120' height={'130'}
+                    <Image marginLeft={"20px"}
+                        src='https://avatars.githubusercontent.com/u/123489852?s=400&u=bc2081e52dc13cc5b141dd882de091669e9da4a2&v=4'
+                        width='120' height={'120'}
                         borderRadius={'50%'} />
 
                     <VStack justifyContent={'center'} alignItems={'end'}>
@@ -26,7 +27,7 @@ const Profilebar = () => {
                         </SimpleGrid>
                     </VStack>
                 </Stack>
-            </div>
+            </Container>
         </div>
     )
 }
